@@ -1,0 +1,328 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.app-title {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666666;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+/* Policy info */
+.policy-info {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8f8f8;
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+}
+
+.effective-date,
+.last-updated {
+    font-size: 0.9rem;
+    color: #666666;
+    margin: 0.25rem 0;
+}
+
+/* Typewriter container */
+.typewriter-container {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2.5rem;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.typewriter-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #000000, transparent);
+    animation: scanLine 2s ease-in-out infinite;
+}
+
+@keyframes scanLine {
+    0%, 100% { transform: translateX(-100%); }
+    50% { transform: translateX(100%); }
+}
+
+/* Typewriter text */
+.typewriter-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    opacity: 1;
+}
+
+@keyframes fadeInTypewriter {
+    to { opacity: 1; }
+}
+
+.typewriter-text p {
+    margin-bottom: 1.5rem;
+    color: #000000;
+}
+
+.typewriter-text h2 {
+    font-size: 1.4rem;
+    color: #000000;
+    margin: 2.5rem 0 1rem 0;
+    font-weight: 500;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.typewriter-text h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 20px;
+    background: #000000;
+    border-radius: 2px;
+}
+
+.typewriter-text ul {
+    margin: 1rem 0 1.5rem 2rem;
+    list-style: none;
+}
+
+.typewriter-text li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+    color: #000000;
+}
+
+.typewriter-text li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #000000;
+    font-weight: bold;
+}
+
+.typewriter-text strong {
+    color: #000000;
+    font-weight: 500;
+}
+
+.typewriter-text a {
+    color: #0000ff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.typewriter-text a:hover {
+    color: #000080;
+    text-decoration: underline;
+}
+
+.typewriter-text a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(90deg, #00d4ff, #5b21b6);
+    transition: width 0.3s ease;
+}
+
+.typewriter-text a:hover::after {
+    width: 100%;
+}
+
+.intro {
+    font-size: 1.1rem;
+    color: #000000;
+    font-style: italic;
+    border-left: 3px solid #000000;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    background: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 0 10px 10px 0;
+}
+
+.contact-info {
+    background: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    margin-top: 1rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.github-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666666;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 25px;
+    background: #f8f8f8;
+}
+
+.github-link a:hover {
+    color: #0000ff;
+    border-color: #0000ff;
+    background: #f0f0ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2);
+}
+
+.github-link svg {
+    transition: transform 0.3s ease;
+}
+
+.github-link a:hover svg {
+    transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .app-title {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .typewriter-container {
+        padding: 1.5rem;
+    }
+    
+    .typewriter-text {
+        font-size: 0.9rem;
+    }
+    
+    .typewriter-text h2 {
+        font-size: 1.2rem;
+    }
+    
+    .intro {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-title {
+        font-size: 2rem;
+    }
+    
+    .typewriter-container {
+        padding: 1rem;
+    }
+    
+    .typewriter-text {
+        font-size: 0.85rem;
+    }
+    
+    .typewriter-text h2 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #00d4ff, #5b21b6);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #5b21b6, #ec4899);
+}
+
+/* Selection styling */
+::selection {
+    background: rgba(0, 212, 255, 0.3);
+    color: #ffffff;
+}
+
+/* Loading animation */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.loading {
+    animation: pulse 1.5s ease-in-out infinite;
+}

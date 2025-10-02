@@ -1,0 +1,28 @@
+{
+  "name": "remy-privacy-policy",
+  "version": "1.0.0",
+  "description": "A sleek, aesthetic web application displaying the Remy app's privacy policy with typewriter effect",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000",
+    "deploy": "git add . && git commit -m 'Update privacy policy' && git push origin main"
+  },
+  "keywords": [
+    "privacy-policy",
+    "typewriter-effect",
+    "web-app",
+    "remy",
+    "github-pages"
+  ],
+  "author": "Keshav Krishnan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keshavkrishnan/RemyWebPolicy.git"
+  },
+  "homepage": "https://keshavkrishnan.github.io/RemyWebPolicy/",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
