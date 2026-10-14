@@ -1,54 +1,23 @@
-# Remy Privacy Policy
+# Remy Privacy
 
-A sleek, aesthetic web application displaying the Remy app's privacy policy with a beautiful typewriter effect and modern design.
+**Hosts the privacy policy for the Remy app as a small static site.**
 
-## Features
+Live: **https://remy-web-policy.vercel.app**
 
-- ✨ **Sleek Design**: Modern dark theme with gradient backgrounds and glassmorphism effects
-- ⌨️ **Typewriter Effect**: Animated text that types out the privacy policy content
-- 📱 **Responsive**: Fully responsive design that works on all devices
-- 🎨 **Beautiful Typography**: Uses JetBrains Mono font for a clean, monospace aesthetic
-- 🌈 **Smooth Animations**: Gradient shifts, hover effects, and smooth transitions
-- 🔗 **GitHub Integration**: Direct link to view the source code
+## Files
 
-## Technologies Used
+- `index.html`: the privacy policy, effective October 2, 2025
+- `styles.css`: page styles, set in JetBrains Mono
+- `script.js`: smooth scrolling and scroll-in animations
+- `package.json`: `npm start` serves the folder locally; `npm run deploy` commits and pushes to `main`
+- `setup.sh`: first-time git setup notes, written for GitHub Pages before the site moved to Vercel
 
-- **HTML5**: Semantic markup structure
-- **CSS3**: Modern styling with gradients, animations, and responsive design
-- **JavaScript**: Typewriter effect and smooth animations
-- **GitHub Pages**: For hosting and deployment
+## What the policy says
 
-## Getting Started
+Remy collects a username, an email address (for registration, communication, and account recovery), and AI usage data: text queries, interactions with the AI, and feature usage. It says it collects no financial, health, government ID, or location data. Account details are kept while the account is active; AI usage data is kept temporarily for performance and abuse detection, and some anonymized data may be kept longer for analytics. Remy does not sell, rent, or trade personal information, but it may share limited data with service providers (hosting, authentication, analytics), when the law requires it, or in a merger or sale. Users can request access, correction, or deletion by email.
 
-1. Clone this repository:
+## Update and deploy
 
-   ```bash
-   git clone https://github.com/keshavkrishnan/RemyWebPolicy.git
-   ```
+Preview with `npm start` (Python's `http.server` on http://localhost:8000). Vercel deploys the `main` branch to production, so edit `index.html`, update both dates at the top, and push to `main`.
 
-2. Open `index.html` in your web browser to view the privacy policy
-
-3. Or visit the live site: [https://keshavkrishnan.github.io/RemyWebPolicy/](https://keshavkrishnan.github.io/RemyWebPolicy/)
-
-## Customization
-
-To customize the privacy policy content:
-
-1. Edit the content in `index.html` within the `.typewriter-text` div
-2. Modify the styling in `styles.css` to change colors, fonts, or layout
-3. Adjust the typewriter speed in `script.js` by changing the `speed` parameter
-
-## Deployment
-
-This project is automatically deployed to GitHub Pages. Any changes pushed to the main branch will be automatically deployed.
-
-## Contact
-
-For questions about this privacy policy or the Remy app, contact:
-
-- Email: keshav-krishnan@outlook.com
-- Address: 9677 Summerlakes Drive
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
+Contact: keshav-krishnan@outlook.com
